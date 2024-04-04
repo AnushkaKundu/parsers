@@ -1,5 +1,3 @@
-from prettytable import PrettyTable
-
 def removeLeftRecursion(rulesDiction):
 	store = {}
 	for lhs in rulesDiction:
@@ -39,7 +37,7 @@ def string_to_dict(rules):
 			multirhs[i] = multirhs[i].strip()
 			multirhs[i] = multirhs[i].split()
 		diction[k[0]] = multirhs
-		return diction
+	return diction
 
 def dict_to_string(rules_dict):
     formatted_rules = []
